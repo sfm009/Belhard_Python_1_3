@@ -20,7 +20,7 @@ def multiply_str(user_string: str, n: str) -> str:
     :return: результирующая строка
     """
 
-    return None
+    return user_string * int(n)
 
 
 if __name__ == '__main__':
