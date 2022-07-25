@@ -24,10 +24,10 @@ def process_numbers(numbers: str) -> str:
 
     :return: обработанная строка
     """
-    # numbers.replace('1', 'uno')
-    # numbers.replace('2', 'two')
-    # numbers.replace('3', ' ')
-    return numbers.replace('1', 'uno') and numbers.replace('2', 'two') and numbers.replace('3', '')
+    numbers = numbers.replace('1', 'uno')
+    numbers = numbers.replace('2', 'two')
+    numbers = numbers.replace('3', '')
+    return numbers
 
 
 if __name__ == '__main__':
