@@ -20,7 +20,7 @@ def n_sum(n: int) -> int:
     :return: результат выполнения
     """
 
-    return None
+    return n + n**2 + n**3
 
 
 if __name__ == '__main__':
