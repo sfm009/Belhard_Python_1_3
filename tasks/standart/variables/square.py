@@ -25,8 +25,10 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
 
-
-    return None
+    p = int(side) * 4 #периметр
+    s = int(side) ** 2 #площадь
+    d = sqrt(int(side) ** 2 + int(side) ** 2)
+    return p, s, d
 
 
 if __name__ == '__main__':
