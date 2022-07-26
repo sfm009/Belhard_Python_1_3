@@ -21,8 +21,8 @@ def tip(bill: str) -> tuple:
         а второе значение - размер cashback (3%)
     :rtype: tuple
     """
-    tips = float(bill) * 0.15 #чаевые
-    cash = float(bill) * 0.03 #cashback
+    tips = float(bill) * 0.15  # чаевые
+    cash = float(bill) * 0.03  # cashback
     return tips, cash
 
 
