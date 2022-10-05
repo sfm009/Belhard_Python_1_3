@@ -19,8 +19,15 @@
 
 
 def shortener(text):
-
-    return None
+    words = string.split(' ')
+    fragment_1 = '('
+    fragment_2 = ')'
+    new_words = []
+    for word in words:
+        if fragment_1 not in word and fragment_2 not in word:
+            new_words.append(word)
+    result = ' '.join(new_words)
+    return result
 
 
 if __name__ == '__main__':

@@ -9,6 +9,7 @@
 --------------------------------------------------------------------------------
 triangle(3, 4) -> (5, 12, 6)
 """
+from math import sqrt
 
 
 def triangle(side_1: int, side_2: int) -> tuple:
@@ -24,8 +25,10 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :return: кортеж с параметрами
     :rtype: tuple
     """
-
-    return None
+    p = side_1 + side_2 + sqrt((side_1) ** 2 + (side_2) ** 2)  # периметр
+    s = (side_1 * side_2) / 2  # площадь
+    g = sqrt((side_1) ** 2 + (side_2) ** 2)  # гипотенуза
+    return int(g), int(p), int(s)
 
 
 if __name__ == '__main__':
